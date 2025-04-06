@@ -5,19 +5,19 @@
     "course": {
       "dpi": 150,
       "x": 0,
-      "y": -100,
+      "y": 0,
       "hide": false,
       "line_width": 1.75,
       "point_weight": 80,
-      "width": 400,
-      "height": 400,
+      "width": 132,
+      "height": 293,
       "color": "#f4f4f4",
       "margin": 0.1,
       "sub_point": {
         "point_weight": 345,
         "opacity": 0.52
       },
-      "rotation": 80
+      "rotation": 0
     },
     "elevation": {
       "hide": false,
@@ -38,17 +38,17 @@
           "font": "Furore.otf",
           "round": 0,
           "x_offset": 20,
-          "y_offset": 20,
+          "y_offset": 120,
           "font_size": 12.5,
           "units": ["metric", "imperial"]
         }
       }
     },
     "gradient": {
-      "color": "#ffffff96",
+      "color": "#ffffffff",
       "x": 10,
       "y": 528,
-      "hide": false,
+      "hide": true,
       "font_size": 50,
       "suffix": ""
     },
@@ -56,19 +56,19 @@
       "hide": true
     },
     "power": {
-      "color": "#ffffff96",
+      "color": "#ffffffff",
       "x": 10,
-      "y": 434,
+      "y": 392,
       "font_size": 50,
       "hide": false,
       "suffix": ""
     },
     "speed": {
       "hide": false,
-      "opacity": 0.3,
+      "opacity": 0.8,
       "imperial": {
-        "color": "#ffffff96",
-        "opacity": 0.3,
+        "color": "#ffffffff",
+        "opacity": 0.8,
         "x": 10,
         "y": 235,
         "font_size": 50,
@@ -76,11 +76,11 @@
         "suffix": ""
       },
       "metric": {
-        "color": "#ffffff96",
+        "color": "#ffffffff",
         "x": 10,
-        "y": 330,
+        "y": 10330,
         "font_size": 50,
-        "hide": false,
+        "hide": true,
         "suffix": ""
       }
     },
@@ -98,8 +98,8 @@
       "opacity": 0.5
     },
     "scene": {
-      "start": 15720,
-      "end": 17400,
+      "start": 0,
+      "end": 4167,
       "fps": 1,
       "height": 720,
       "width": 1280,
@@ -108,7 +108,7 @@
     },
     "labels": [
       {
-        "color": "#ffffff96",
+        "color": "#ffffffff",
         "text": "MPH",
         "x": 10,
         "y": 193,
@@ -116,28 +116,28 @@
         "font_size": 40
       },
       {
-        "color": "#ffffff96",
+        "color": "#ffffffff",
         "text": "KMH",
         "x": 10,
         "y": 290,
-        "hide": false,
+        "hide": true,
         "font_size":40
       },
       {
-        "color": "#ffffff96",
-        "text": "PWR",
+        "color": "#ffffffff",
+        "text": "POWER",
         "x": 10,
-        "y": 392,
+        "y": 350,
         "hide": false,
         "font_size": 40,
         "opacity": 0.5
       },
       {
-        "color": "#ffffff96",
+        "color": "#ffffffff",
         "text": "Grad.",
         "x": 10,
         "y": 489,
-        "hide": false,
+        "hide": true,
         "font_size": 40,
         "opacity": 0.5
       }

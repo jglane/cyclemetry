@@ -1,0 +1,134 @@
+{
+  "cadence": {
+    "hide": true
+  },
+  "course": {
+    "dpi": 300,
+    "x": -10,
+    "y": -35,
+    "hide": false,
+    "line_width": 0.875,
+    "point_weight": 40,
+    "width": 691,
+    "height": 440, 
+    "color": "#f4f4f4",
+    "margin": 0.1,
+    "sub_point": {
+      "point_weight": 172,
+      "opacity": 0.52
+    },
+    "rotation": 0
+  },
+  "elevation": {
+    "dpi": 300,
+    "x": 0,
+    "y": 0,
+    "hide": false,
+    "profile": {
+      "color": "#f4f4f4",
+      "dpi": 300,
+      "line_width": 2,
+      "hide": false,
+      "x": 850,
+      "y": 550,
+      "width": 1200,
+      "height": 1000,
+      "fill_opacity": 0.65,
+      "rotation": 0,
+      "point_weight": 14,
+      "point_label": {
+        "color": "#ffffffc8",
+        "font": "Furore.otf",
+        "round": 0,
+        "x_offset": 20,
+        "y_offset": 20,
+        "font_size": 12.5,
+        "units": ["imperial"]
+      }
+    }
+  },
+  "gradient": {
+    "color": "#ffffffff",
+    "x": 1070,
+    "y": 1010,
+    "hide": false,
+    "font_size": 25,
+    "suffix": "%"
+  },
+  "speed": {
+    "hide": false,
+    "opacity": 0.3,
+    "imperial": {
+      "color": "#ffffffff",
+      "x": 40,
+      "y": 590,
+      "font_size": 120,
+      "hide": false,
+      "suffix": ""
+    }
+  },
+  "heartrate": {
+    "color": "#ffffffff",
+    "x": 40,
+    "y": 742,
+    "font_size": 120,
+    "hide": false,
+    "suffix": ""
+  },
+  "power": {
+    "color": "#ffffffff",
+    "x": 40,
+    "y": 894,
+    "font_size": 120,
+    "hide": false,
+    "suffix": ""
+  },
+  "time": {
+    "hide": true
+  },
+  "temperature": {
+    "hide": true
+  },
+  "global": {
+    "font_size": 30,
+    "font": "Evogria.otf",
+    "color": "#ffffff",
+    "round": 0,
+    "opacity": 0.5
+  },
+  "scene": {
+    "start": 6300,
+    "end": 7769,
+    "fps": 2,
+    "height": 1080,
+    "width": 1920,
+    "quicktime_compatible": false,
+    "output_filename": "out_1080.mov"
+  },
+  "labels": [
+    {
+      "color": "#ffffffff",
+      "text": "MPH",
+      "x": 50,
+      "y": 573,
+      "hide": false,
+      "font_size": 35
+    },
+    {
+      "color": "#ffffffff",
+      "text": "HR",
+      "x": 50,
+      "y": 725,
+      "hide": false,
+      "font_size": 35
+    },
+    {
+      "color": "#ffffffff",
+      "text": "POWER",
+      "x": 50,
+      "y": 877,
+      "hide": false,
+      "font_size": 35
+    }
+  ]
+}

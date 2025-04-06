@@ -31,6 +31,7 @@
     },
     "rotation": 0,
     "profile": {
+      "color": "#f4f4f4",
       "dpi": 150,
       "x": 0,
       "y": 0,
@@ -104,6 +105,8 @@
     "color": "#ffffff"
   },
   "scene": {
+    "start": 0,
+    "end": 4167,
     "fps": 30,
     "height": 1080,
     "width": 1920,

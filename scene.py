@@ -94,8 +94,8 @@ class Scene:
         p.stdin.close()
         p.wait()
 
-        if quicktime_compatible:
-            subprocess.call(["open", output_filename])
+        #if quicktime_compatible:
+            #subprocess.call(["open", output_filename])
 
         # TODO - try to not depend on ffmpeg subprocess call please
         # clips = [

@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-import inquirer
+#import inquirer
 
 import constant
 from activity import Activity
@@ -26,15 +26,14 @@ def demo_frame(gpx_filename, template_filename, second):
     activity.interpolate(scene.fps)
     scene.build_figures()
     scene.render_demo(end - start, second)
-    subprocess.call(["open", scene.frames[0].full_path()])
+    #subprocess.run(["open", scene.frames[0].full_path()])
     return scene
 
 
 # TODO improve argument handling
 if __name__ == "__main__":
-    gpx_filename = "config.gpx"
-    template_filename = "safa_brian_a.json"
-    # template_filename = "safa_brian_a_1280_720.json"
+    gpx_filename = "Morning_Ride.gpx"
+    template_filename = "safa_brian_road_race.json"
     if len(sys.argv) >= 2:
         if sys.argv[1] == "demo":
             second = int(sys.argv[2]) if len(sys.argv) == 3 else 0
