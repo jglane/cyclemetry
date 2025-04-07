@@ -4,13 +4,13 @@
   },
   "course": {
     "dpi": 300,
-    "x": 20,
-    "y": -25,
+    "x": 30,
+    "y": -30,
     "hide": false,
     "line_width": 0.875,
     "point_weight": 40,
-    "width": 432,
-    "height": 440,
+    "width": 215,
+    "height": 500,
     "color": "#f4f4f4",
     "margin": 0.1,
     "sub_point": {
@@ -98,7 +98,7 @@
   },
   "scene": {
     "start": 0,
-    "end": 4803,
+    "end": 3672,
     "fps": 2,
     "height": 1080,
     "width": 1920,

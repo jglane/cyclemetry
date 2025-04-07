@@ -8,14 +8,14 @@ from activity import Activity
 from scene import Scene
 
 
-def render_overlay(gpx_filename, template_filename):
+def render_overlay(gpx_filename, template_filename, output_filename):
     activity = Activity(gpx_filename)
     scene = Scene(activity, activity.valid_attributes, template_filename)
     start, end = scene.configs["scene"]["start"], scene.configs["scene"]["end"]
     activity.trim(start, end)
     activity.interpolate(scene.fps)
     scene.build_figures()
-    scene.render_video(end - start)
+    scene.render_video(end - start, output_filename)
 
 
 def demo_frame(gpx_filename, template_filename, second):
@@ -32,11 +32,16 @@ def demo_frame(gpx_filename, template_filename, second):
 
 # TODO improve argument handling
 if __name__ == "__main__":
-    gpx_filename = "Morning_Ride.gpx"
-    template_filename = "safa_brian_road_race.json"
-    if len(sys.argv) >= 2:
-        if sys.argv[1] == "demo":
-            second = int(sys.argv[2]) if len(sys.argv) == 3 else 0
+    if len(sys.argv) < 3:
+        print("Usage: python main.py <gpx_filename> <template_filename>")
+        exit()
+    
+    gpx_filename = sys.argv[1]
+    template_filename = sys.argv[2]
+
+    if len(sys.argv) > 3:
+        if sys.argv[3] == "demo":
+            second = int(sys.argv[4]) if len(sys.argv) == 5 else 0
             while True:
                 print(
                     f"demoing frame using the {template_filename} template and {gpx_filename} gpx file"
@@ -47,4 +52,6 @@ if __name__ == "__main__":
     print(
         f"rendering overlay using the {template_filename} template and {gpx_filename} gpx file"
     )
-    render_overlay(gpx_filename, template_filename)
+    
+    output_filename = gpx_filename[:-4] + ".mov"
+    render_overlay(gpx_filename, template_filename, output_filename)

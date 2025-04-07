@@ -27,9 +27,9 @@ class Scene:
         self.labels = self.configs["labels"]
         self.frames = []
 
-    def render_video(self, seconds):
+    def render_video(self, seconds, output_filename):
         self.build_frames(seconds)
-        self.export_video()
+        self.export_video(output_filename)
 
     def render_demo(self, seconds, second):
         self.build_frame(seconds, second, 0)
@@ -62,8 +62,7 @@ class Scene:
         )
 
     # warning: quicktime_compatible codec produces nearly x5 larger file
-    def export_video(self):
-        output_filename = self.configs["scene"]["output_filename"]
+    def export_video(self, output_filename):
         quicktime_compatible = self.configs["scene"]["quicktime_compatible"]
         less_verbose = ["-loglevel", "warning"]
         framerate = ["-r", str(self.fps)]
