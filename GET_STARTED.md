@@ -4,7 +4,7 @@
 ```
 > git clone https://github.com/jglane/cyclemetry.git
 > cd cyclemetry
-> git checkout ???
+> git checkout -b cli origin/cli
 ```
 * Install proper dependencies with pip package manager
 * Install ffmpeg
