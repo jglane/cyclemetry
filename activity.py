@@ -95,7 +95,7 @@ class Activity:
                         )
                     case constant.ATTR_DIST_REMAINING:
                         # Distance between two gpx points
-                        distance += point.distance_2d(track_segment.points[ii - 1]) if ii > 0 else 0
+                        distance += point.distance_2d(previous_point) if ii > 0 else 0
                         data[attribute].append(total_distance - distance)
             previous_point = point
 
