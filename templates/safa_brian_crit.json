@@ -18,8 +18,8 @@
     "hide": false,
     "line_width": 0.875,
     "point_weight": 40,
-    "width": 215,
-    "height": 500,
+    "width": 300,
+    "height": 300,
     "color": "#f4f4f4",
     "margin": 0.1,
     "sub_point": {
@@ -107,7 +107,7 @@
   },
   "scene": {
     "start": 0,
-    "end": 3672,
+    "end": 10000,
     "fps": 2,
     "height": 1080,
     "width": 1920,

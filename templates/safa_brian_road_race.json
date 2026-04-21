@@ -18,8 +18,8 @@
     "hide": false,
     "line_width": 0.875,
     "point_weight": 40,
-    "width": 691,
-    "height": 440, 
+    "width": 300,
+    "height": 300, 
     "color": "#f4f4f4",
     "margin": 0.1,
     "sub_point": {
@@ -39,9 +39,9 @@
       "line_width": 2,
       "hide": false,
       "x": 850,
-      "y": 550,
+      "y": 650,
       "width": 1200,
-      "height": 1000,
+      "height": 1200,
       "fill_opacity": 0.65,
       "rotation": 0,
       "point_weight": 14,
@@ -106,8 +106,8 @@
     "opacity": 0.5
   },
   "scene": {
-    "start": 6300,
-    "end": 7769,
+    "start": 0,
+    "end": 10000,
     "fps": 2,
     "height": 1080,
     "width": 1920,
