@@ -1,13 +1,15 @@
 # Windows
 
 ## Install
+Tested using Python 3.13.13, pip 26.0.1
 ```
-> git clone https://github.com/jglane/cyclemetry.git
-> cd cyclemetry
-> git checkout -b cli origin/cli
+git clone https://github.com/jglane/cyclemetry.git
+cd cyclemetry
+python -m venv venv
+./venv/Scripts/activate
+pip install -r requirements.txt
 ```
-* Install proper dependencies with pip package manager
-* Install ffmpeg
+* Install [ffmpeg](https://ffmpeg.org/)
 * Add gpx file to root directory
 
 ## Edit the template
@@ -18,9 +20,9 @@ Necessary changes
 ## Render the overlay
 Demo a frame first to check the template
 ```
-> python main.py <gpx_file> <template_filename> demo
+python main.py <gpx_file> <template_filename> demo
 ```
 When that looks good, start rendering the overlay
 ```
-> python main.py <gpx_file> <template_filename>
+python main.py <gpx_file> <template_filename>
 ```
