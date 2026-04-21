@@ -1,4 +1,13 @@
 {
+  "dist_remaining": {
+    "color": "#ffffffff",
+    "x": 1870,
+    "y": 50,
+    "font_size": 60,
+    "hide": false,
+    "suffix": "m",
+    "anchor": "rt"
+  },
   "cadence": {
     "hide": true
   },

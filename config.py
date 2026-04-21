@@ -239,7 +239,7 @@ def blank_template(filename="blank_template.json"):
                 ]["metric"]
                 del config[attribute]["x"]
                 del config[attribute]["y"]
-            case constant.ATTR_CADENCE | constant.ATTR_GRADIENT | constant.ATTR_HEARTRATE | constant.ATTR_POWER:
+            case constant.ATTR_CADENCE | constant.ATTR_GRADIENT | constant.ATTR_HEARTRATE | constant.ATTR_POWER | constant.ATTR_DIST_REMAINING:
                 config[attribute]["suffix"] = constant.DEFAULT_SUFFIX_MAP[attribute]
             case constant.ATTR_COURSE | constant.ATTR_ELEVATION:
                 config[attribute] = blank_asset.copy()

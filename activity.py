@@ -34,7 +34,7 @@ class Activity:
         ]
         for track_point in track_points:
             attributes.update(
-                {constant.ATTR_COURSE, constant.ATTR_SPEED}
+                {constant.ATTR_COURSE, constant.ATTR_SPEED, constant.ATTR_DIST_REMAINING}
             ) if track_point.latitude and track_point.longitude else None
             attributes.add(constant.ATTR_TIME) if track_point.time else None
             attributes.add(constant.ATTR_ELEVATION) if track_point.elevation else None
@@ -73,6 +73,8 @@ class Activity:
         data = defaultdict(list)
         track_segment = self.gpx.tracks[0].segments[0]
         previous_point = None
+        distance = 0 # Distance accumulator for calculating dist_remaining
+        total_distance = track_segment.length_2d() # Total distance based on the track segment
         for ii, point in enumerate(track_segment.points):
             for attribute in self.valid_attributes:
                 match attribute:
@@ -91,6 +93,10 @@ class Activity:
                         data[attribute].append(
                             parse_attribute(self.tag_map[attribute], point)
                         )
+                    case constant.ATTR_DIST_REMAINING:
+                        # Distance between two gpx points
+                        distance += point.distance_2d(track_segment.points[ii - 1]) if ii > 0 else 0
+                        data[attribute].append(total_distance - distance)
             previous_point = point
 
         for attribute in self.valid_attributes:

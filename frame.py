@@ -19,12 +19,12 @@ class Frame:
         return f"{constant.FRAMES_DIR}{self.filename}"
 
     def draw_value(self, img, value: str, config: dict):
-        def draw_value_helper(text, color, x, y, font_size, font="arial.ttf"):
+        def draw_value_helper(text, color, x, y, anchor, font_size, font="arial.ttf"):
             if not os.path.exists(font):
                 font = constant.FONTS_DIR + font
             font = ImageFont.truetype(font, font_size)
             ImageDraw.Draw(img).text(
-                (x, y), text, font=font, fill=ImageColor.getcolor(color, "RGBA")
+                (x, y), text, font=font, anchor=anchor, fill=ImageColor.getcolor(color, "RGBA")
             )
 
         if type(value) in (int, float):
@@ -43,6 +43,7 @@ class Frame:
             config["color"],
             config["x"],
             config["y"],
+            config["anchor"] if "anchor" in config.keys() else None,
             config["font_size"],
             config["font"],
         )

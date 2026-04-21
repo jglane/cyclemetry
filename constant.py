@@ -29,6 +29,7 @@ ATTR_POWER = "power"
 ATTR_SPEED = "speed"
 ATTR_TIME = "time"
 ATTR_TEMPERATURE = "temperature"
+ATTR_DIST_REMAINING = "dist_remaining"
 
 NO_INTERPOLATE_ATTRIBUTES = [ATTR_TIME]
 
@@ -42,6 +43,7 @@ ALL_ATTRIBUTES = [
     ATTR_SPEED,
     ATTR_TIME,
     ATTR_TEMPERATURE,
+    ATTR_DIST_REMAINING,
 ]
 
 
@@ -63,6 +65,7 @@ DEFAULT_SUFFIX_MAP = {
         UNIT_IMPERIAL: "°F",
         UNIT_METRIC: "°C",
     },
+    ATTR_DIST_REMAINING: "m"
 }
 
 # COLORS
